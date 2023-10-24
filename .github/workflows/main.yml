@@ -1,0 +1,19 @@
+on: push
+name: 🚀 Deploy website on push
+jobs:
+  web-deploy:
+    name: Deploy
+    runs-on: main
+    steps:    
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v3
+    
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: baker.dreamhost.com
+        username: dh_mawvj7
+        password: ${{ secrets.ftp_password1 }}
+        local-dir: ./discord.thebull.app/
+        server-dir: ./discord.thebull.app/
+        
