@@ -1,0 +1,55 @@
+/* Button Container Styles */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+
+/* Flex Button Styles */
+.flex-button {
+    flex: 1;
+    padding: 10px 20px;
+    margin: 5px 0;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.flex-button a {
+    color: #FFBF00; /* Change the color of the link text */
+    text-decoration: none; /* Remove the underline from the link text */
+    font-family: 'Roboto Mono', monospace;
+}
+
+.flex-button a:hover {
+    color: black; /* Change the color of the link text */
+    text-decoration: none; /* Remove the underline from the link text */
+}
+
+/* Primary Button Styles */
+.primary-button {
+    background-color:black;
+    color: #FFBF00;
+}
+
+/* Secondary Button Styles */
+.secondary-button {
+    background-color: #FFC107;
+    color: #333;
+}
+
+/* Tertiary Button Styles */
+.tertiary-button {
+    background-color: #28A745;
+    color: #fff;
+}
+
+/* Button Hover Styles */
+.flex-button:hover {
+    background-color: #FFC107;
+    color: black;
+}
